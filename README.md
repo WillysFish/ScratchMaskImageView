@@ -5,7 +5,7 @@ We can custom drawable, size, positions which you like.
 <br/>
 Let we see the sample below.  
 
-| Percentage of scratch arrived xx% | Custom size  |
+| Percentage of scratch arrived xx% | Custom size (Bigger mask)  |
 | :-----: | :-----: |
 | <img src="https://github.com/WillysFish/ScratchMaskImageView/blob/main/auto_revealed.gif" height="40%" width="40%" > | <img src="https://github.com/WillysFish/ScratchMaskImageView/blob/main/custom_size.gif" height="40%" width="40%" > |  
 
@@ -99,7 +99,7 @@ fun mask() {}
 
 # License
 ```
-Copyright 2020 zewei yan
+Copyright 2021 zewei yan
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
