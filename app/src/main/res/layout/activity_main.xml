@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E2630"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/content"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:textSize="120sp"
+        android:gravity="center"
+        android:background="@drawable/content_bg"
+        android:text="18"
+        android:textColor="@color/white"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <studio.zewei.willy.scratch.ScratchMaskImageView
+        android:id="@+id/maskImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/tennis"
+        app:layout_constraintBottom_toBottomOf="@id/content"
+        app:layout_constraintEnd_toEndOf="@id/content"
+        app:layout_constraintStart_toStartOf="@id/content"
+        app:layout_constraintTop_toTopOf="@id/content" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/maskBtn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="160dp"
+        android:background="#8250CA"
+        android:gravity="center"
+        android:text="MASK"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/clearBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/clearBtn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="#8250CA"
+        android:gravity="center"
+        android:text="CLEAR"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/maskBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/maskBtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
